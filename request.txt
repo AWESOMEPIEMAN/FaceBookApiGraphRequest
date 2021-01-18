@@ -1,0 +1,10 @@
+GraphRequest request = GraphRequest.newMeRequest(
+  accessToken,
+  new GraphRequest.GraphJSONObjectCallback() {
+    @Override
+    public void onCompleted(JSONObject object, GraphResponse response) {
+      // Insert your code here
+    }
+});
+
+request.executeAsync();
